@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase
 @Database(entities = [Weather::class], version = 1)
 
 abstract class AppDatabase :RoomDatabase(){
-    abstract fun weather_deo():Weather_deo
+    abstract fun weather_deo():WeatherDeo
 
     companion object {
         var INSTANCE: AppDatabase? = null
@@ -22,9 +22,6 @@ abstract class AppDatabase :RoomDatabase(){
             return INSTANCE
         }
 
-        fun destroyDataBase(){
-            INSTANCE = null
-        }
     }
 
 }

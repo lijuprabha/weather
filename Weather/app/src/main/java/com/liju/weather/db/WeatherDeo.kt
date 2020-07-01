@@ -1,9 +1,12 @@
 package com.liju.weather.db
 
-import androidx.room.*
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
 
 @Dao
-interface Weather_deo {
+interface WeatherDeo {
     @Query("SELECT * FROM Weather ORDER BY date_time DESC")
     fun getAll(): MutableList<Weather>
 

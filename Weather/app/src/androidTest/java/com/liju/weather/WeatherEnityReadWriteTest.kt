@@ -5,8 +5,7 @@ import androidx.test.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.liju.weather.db.AppDatabase
 import com.liju.weather.db.Weather
-import com.liju.weather.db.Weather_deo
-import org.hamcrest.Matchers.equalTo
+import com.liju.weather.db.WeatherDeo
 import org.junit.After
 import org.junit.Assert
 import org.junit.Before
@@ -17,7 +16,7 @@ import java.io.IOException
 @RunWith(AndroidJUnit4::class)
 class WeatherEnityReadWriteTest {
 
-    private lateinit var weatherDeo: Weather_deo
+    private lateinit var weatherDeo: WeatherDeo
     private lateinit var db: AppDatabase
 
     @Before

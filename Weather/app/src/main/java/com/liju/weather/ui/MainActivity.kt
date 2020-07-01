@@ -16,7 +16,7 @@ import com.liju.weather.Adapter.WeatherAdapter
 import com.liju.weather.R
 import com.liju.weather.db.AppDatabase
 import com.liju.weather.db.Weather
-import com.liju.weather.db.Weather_deo
+import com.liju.weather.db.WeatherDeo
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_weather_list.*
 import okhttp3.*
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity(), WeatherAdapter.WeatherItemClick {
     private var weatherJson: String? = ""
     private var mToolbar: Toolbar? = null
     private lateinit var db: AppDatabase
-    private lateinit var genderDao: Weather_deo
+    private lateinit var genderDao: WeatherDeo
     private val httpClient = OkHttpClient()
 
     override fun onCreate(savedInstanceState: Bundle?) {

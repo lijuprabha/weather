@@ -24,8 +24,6 @@ class WeatherAdapter(internal val items: MutableList<Weather>?, private val list
         holder.bind(position)
     }
 
-
-
     inner class ViewHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView) {
         fun bind(position: Int) {
             val item = items?.get(position)
@@ -45,9 +43,6 @@ class WeatherAdapter(internal val items: MutableList<Weather>?, private val list
         popup.menuInflater.inflate(R.menu.popup_menu_option, popup.menu)
         popup.setOnMenuItemClickListener { item: MenuItem ->
             when (item.itemId) {
-                R.id.menuEdit -> {
-
-                }
                 R.id.menuDelete -> {
                     listener.onItemClickDelete(position)
                 }
