@@ -6,7 +6,7 @@
     <string name="edit">Edit</string>
 
     <string name="data_refresh">Weather data refreshed</string>
-    <string name="saved_temperature">Temperature Bookmark</string>
+    <string name="saved_temperature">Weather Bookmark</string>
     <string name="successfully_saved">Record successfully saved</string>
     <string name="clear_warning">Are you sure you want to clear all Data?</string>
     <string name="network_error">"Network error.Please check your internet connection."</string>

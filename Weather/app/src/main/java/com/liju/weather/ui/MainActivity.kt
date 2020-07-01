@@ -18,7 +18,7 @@ import com.liju.weather.db.AppDatabase
 import com.liju.weather.db.Weather
 import com.liju.weather.db.Weather_deo
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.content_stylist_follow.*
+import kotlinx.android.synthetic.main.content_weather_list.*
 import okhttp3.*
 import java.io.IOException
 
@@ -97,9 +97,9 @@ class MainActivity : AppCompatActivity(), WeatherAdapter.WeatherItemClick {
             val topic = Gson().fromJson(data, WeatherWrapper::class.java)
             mToolbar?.title = topic.name
             tv_temperature.text = topic.main.getKelvinToCelsius()
-            todayHumidity.text = "Humidity : " + topic.main.humidity + " %"
-            todaySunrise.text = "Sunrise : " + topic.sys.getDate(topic.sys.sunrise)
-            todaySunset.text = "Sunset : " + topic.sys.getDate(topic.sys.sunset)
+            todayHumidity.text= "Humidity : " + topic.main.humidity + " %"
+            todaySunrise.text = "Sunrise  : " + topic.sys.getDate(topic.sys.sunrise)
+            todaySunset.text  = "Sunset   : " + topic.sys.getDate(topic.sys.sunset)
 
         }
     }
